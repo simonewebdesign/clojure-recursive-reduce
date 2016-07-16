@@ -107,14 +107,19 @@
 
 
     (defn good-ones [collection]
-      (defn the-good-one [acc item]
+      (defn good-one [acc item]
+        (println "acc: " acc)
         (if (item :good)
-          (cons (item :id) acc)
+          (do
+            (println "item is good: " item)
+            (cons (item :id) acc))
           (if (seq (item :children))
-            (reduce the-good-one acc (item :children))))
+            (do
+              (println "item has children: " (item :children))
+              (reduce good-one acc (item :children)))
+            acc))
         acc)
-
-      (reduce the-good-one [] collection)
+      (reduce good-one [] collection)
     )
 
 
