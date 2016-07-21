@@ -1,36 +1,16 @@
-# clojure-recursive-reduce
+# Recursive reduce in Clojure
 
-FIXME: description
+Just an experiment on how to recursively reduce an array of nested items.
 
-## Installation
+## Run the tests
 
-Download from http://example.com/FIXME.
+Assuming you have Leiningen installed on your machine, clone this repo and then run `lein test`.
 
-## Usage
+You should see this:
 
-FIXME: explanation
+```
+lein test clojure-recursive-reduce.core-test
 
-    $ java -jar clojure-recursive-reduce-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Ran 1 tests containing 2 assertions.
+0 failures, 0 errors.
+```
